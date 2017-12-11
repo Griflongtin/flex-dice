@@ -1,22 +1,47 @@
+@-webkit-keyframes rotate {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
 body {
   display: flex;
   flex-wrap: wrap;
-  background-color: black;
+  animation: colorchange 50s;
+  -webkit-animation: colorchange 50s infinite;
+  .the-one {
+    display: flex;
+    -webkit-animation: rotate 19s linear infinite;
+    height: 100vh;
+  }
 }
 
 div[class$="face"]{
   display: flex;
-  margin: 10px;
+  margin: 45px;
   border: 5px solid white;
   border-radius: 15px;
-  width: 220px;
-  height: 220px;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: rotate 3s linear infinite;
 }
 .pip {
   width: 25px;
   height: 25px;
   background-color: white;
-  border-radius: 999px;
+  border-radius: 100%;
   margin: 10px;
 }
 .column {
