@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+div[class$="face"]{
+  display: flex;
+  margin: 10px;
+  border: 5px solid white;
+  border-radius: 15px;
+  width: 220px;
+  height: 220px;
+}
+.pip {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 999px;
+  margin: 10px;
+}
+.column {
+  display: flex;
+}
+
+.first-face {
+  align-items: center;
+  justify-content: center;
+}
+
+.second-face {
+  justify-content: space-between;
+  .pip:nth-child(2){
+    align-self: flex-end;
+  }
+}
+
+.third-face {
+  justify-content: space-between;
+  .pip:nth-child(2){
+    align-self: center;
+  }
+  .pip:nth-child(3){
+    align-self: flex-end;
+  }
+}
+
+.fourth-face {
+  flex-direction: column;
+  justify-content: space-between;
+  .column {
+    justify-content: space-between;
+  }
+}
+
+.fifth-face {
+  flex-direction: column;
+  justify-content: space-between;
+  .column:nth-child(1){
+    justify-content: space-between;
+  }
+  .column:nth-child(2){
+    justify-content: center;
+  }
+  .column:nth-child(3){
+    justify-content: space-between;
+  }
+}
+
+.sixth-face {
+  flex-direction: row;
+  justify-content: space-between;
+  .column {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
