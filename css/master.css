@@ -7,7 +7,7 @@
   0% {
     background: red; }
   25% {
-    background: yellow; }
+    background: pink; }
   50% {
     background: blue; }
   75% {
@@ -17,8 +17,7 @@
 body {
   display: flex;
   flex-wrap: wrap;
-  animation: colorchange 50s;
-  -webkit-animation: colorchange 50s infinite; }
+  animation: colorchange 50s infinite; }
   body .the-one {
     display: flex;
     -webkit-animation: rotate 19s linear infinite;
@@ -34,10 +33,10 @@ div[class$="face"] {
   -webkit-animation: rotate 3s linear infinite; }
 
 .pip {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 50%;
   margin: 10px; }
 
 .column {
